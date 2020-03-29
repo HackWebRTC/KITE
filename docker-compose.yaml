@@ -1,0 +1,31 @@
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59-20200326
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+
+  chrome1:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /Users/piasy/Downloads:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+      - NODE_MAX_INSTANCES=5
+
+  chrome2:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /Users/piasy/Downloads:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+      - NODE_MAX_INSTANCES=5

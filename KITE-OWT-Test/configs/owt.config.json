@@ -1,0 +1,95 @@
+{
+  "name": "OWT %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://<selenium grids IP>:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "name": "OWT Test %ts",
+      "tupleSize": 2,
+      "description": "OWT test description",
+      "testImpl": "org.webrtc.kite.owt.KiteOWTTest",
+      "payload" : {
+        "meetingDuration": 60,
+        "url": "https://<OWT Server IP>:3004/?forward=true&self=false",
+        "rooms": [
+          "5e0067ae75f4296cba4eb212",
+          "5e006b6c18df3c6cbcf6aa33",
+          "5e006b8c97be1b6cc2b80996",
+          "5e006c6cf104c96cb5a4d0bd",
+          "5e170c9518df3c6cbcf6aa36",
+          "5e170f55f104c96cb5a4d0be",
+          "5e3cfdd6f104c96cb5a4d0bf",
+          "5e5604b275f4296cba4eb216",
+          "5e5604e975f4296cba4eb217",
+          "5e5604fdf104c96cb5a4d0c1",
+          "5e560559f104c96cb5a4d0c2",
+          "5e56059f18df3c6cbcf6aa39",
+          "5e56075275f4296cba4eb219",
+          "5e68791f75f4296cba4eb21b",
+          "5e6879e618df3c6cbcf6aa3a",
+          "5e7b2d73e42d69089fe7b1bc",
+          "5e7b31e5a979eb08999f0673",
+          "5e7b33f1e42d69089fe7b1bd",
+          "5e7b342cec9356089889ea87",
+          "5e7b346ea979eb08999f0676",
+          "5e7b349da979eb08999f0677",
+          "5e7b3525ec9356089889ea8b",
+          "5e7b35afec9356089889ea8c",
+          "5e7b3663ec9356089889ea8d",
+          "5e7b37d1ec9356089889ea8e",
+          "5e7b37eca979eb08999f0678",
+          "5e7b381ca979eb08999f0679",
+          "5e7b39edec9356089889ea90",
+          "5e7b3a11a979eb08999f067a",
+          "5e7b3a4eec9356089889ea91",
+          "5e7b3ad0ec9356089889ea92",
+          "5e7b3b9fec9356089889ea93",
+          "5e7b3bcca979eb08999f067b",
+          "5e7b3d02a979eb08999f067c",
+          "5e7b3d2bec9356089889ea94",
+          "5e7b3dfea979eb08999f067d",
+          "5e7b3e17e42d69089fe7b1c5",
+          "5e7b4333ec9356089889ea95",
+          "5e7b44029bea0e0893ca2045",
+          "5e7b4423a979eb08999f067e",
+          "5e7b444eec9356089889ea97",
+          "5e7b4549a979eb08999f067f",
+          "5e7b561dec9356089889ea98",
+          "5e7b5a53ec9356089889ea99",
+          "5e7b5c20e42d69089fe7b1cb",
+          "5e7c879da979eb08999f0684",
+          "5e7c87e3e42d69089fe7b1ce",
+          "5e7c88a7e42d69089fe7b1cf",
+          "5e7c8aef9bea0e0893ca204a",
+          "5e7c8b6de42d69089fe7b1d0",
+          "5e7c8bfc9bea0e0893ca204b",
+          "5e7c9008a979eb08999f0687",
+          "5e7c95039bea0e0893ca204c",
+          "5e7ca307ec9356089889eaa1",
+          "5e7ca5ede42d69089fe7b1d4",
+          "5e7cabeba979eb08999f068b",
+          "5e7cac8dec9356089889eaa3",
+          "5e7da42fa979eb08999f068d",
+          "5e7da54e9bea0e0893ca2050",
+          "5e7eede39bea0e0893ca2051"
+        ],
+        "room_size": 2
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "chrome",
+      "platform": "LINUX",
+      "video": {
+        "filename": "TheBigBangTheoryS09E01-high",
+        "directory": "/fake_data/",
+        "type": "Video"
+      }
+    }
+  ]
+}

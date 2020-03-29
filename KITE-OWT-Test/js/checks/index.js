@@ -1,0 +1,2 @@
+exports.MyFirstCheck = require("./MyFirstCheck");
+

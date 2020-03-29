@@ -1,0 +1,27 @@
+{
+  "name": "OWT %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://localhost:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "name": "OWT Test %ts",
+      "tupleSize": 1,
+      "description": "OWT test description",
+      "testImpl": "OWT.js",
+      "payload" : {
+        "url": "https://google.com",
+        "testTimeout": 60
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "chrome",
+      "platform": "localhost"
+    }
+  ]
+}
