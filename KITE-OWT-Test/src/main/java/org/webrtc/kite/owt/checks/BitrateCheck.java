@@ -42,16 +42,16 @@ public class BitrateCheck extends TestCheck {
   @Override
   protected void step() throws KiteTestException {
     int duration = 20_000;
-    double minBitrate = 0.7 * expectedBitrate;
+    double minBitrate = 0.4 * expectedBitrate;
     double maxBitrate = 1.3 * expectedBitrate;
 
-    logger.info("BitrateCheck get start bitrate");
+    logger.info("BitrateCheck get start bytes");
     double startingTotalByteCount = mainPage.getPublishTotalSentBytes();
-    logger.info("BitrateCheck got start bitrate");
+    logger.info("BitrateCheck got start bytes");
     waitAround(duration);
-    logger.info("BitrateCheck get end bitrate");
+    logger.info("BitrateCheck get end bytes");
     double endingTotalByteCount = mainPage.getPublishTotalSentBytes();
-    logger.info("BitrateCheck got end bitrate");
+    logger.info("BitrateCheck got end bytes");
 
     double avgBitrate = (endingTotalByteCount - startingTotalByteCount) * 8 / duration;
     // Assuming that there's a 10% tolerance to the test result:

@@ -30,7 +30,8 @@ public class OpenUrlStep extends TestStep {
   @Override
   protected void step() throws KiteTestException {
     // if all clients join at the same time, some client may not receive others
-    waitAround((runner.getId() % roomSize) * 2000);
+    //waitAround((runner.getId() % roomSize) * 2000);
+    waitAround(runner.getId() * 1200);
     logger.info("OpenUrlStep open " + url);
     mainPage.open(url);
   }

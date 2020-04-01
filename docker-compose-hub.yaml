@@ -1,0 +1,117 @@
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59-20200326
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+
+  chrome1:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome2:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome3:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome4:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome5:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome6:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome7:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome8:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome9:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+  chrome10:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444

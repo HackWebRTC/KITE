@@ -1,0 +1,121 @@
+version: "3"
+services:
+  chrome1:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5001:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5001
+
+  chrome2:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5002:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5002
+
+  chrome3:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5003:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5003
+
+  chrome4:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5004:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5004
+
+  chrome5:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5005:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5005
+
+  chrome6:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5006:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5006
+
+  chrome7:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5007:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5007
+
+  chrome8:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5008:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5008
+
+  chrome9:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5009:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5009
+
+  chrome10:
+    image: selenium/node-chrome:3.141.59-20200326
+    volumes:
+      - /dev/shm:/dev/shm
+      - /home/ubuntu:/fake_data
+    ports:
+      - "5010:5555"
+    environment:
+      - HUB_HOST=<selenium hub server ip>
+      - HUB_PORT=4444
+      - REMOTE_HOST=http://<selenium node server ip>:5010
